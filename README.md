@@ -9,4 +9,7 @@ requests are routed to appropriate js file in node-modules/config/
 
 Request payloads are JSON
 
-Ported off EC2 july 13 2015
+Ported off EC2 to GH  july 13 2015
+Cloned from GH to Perforce VM july 13 2015
+Pushing to empty GL proj july 13 2015
+
