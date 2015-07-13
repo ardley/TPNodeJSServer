@@ -8,3 +8,5 @@ Routes handles routing of the various types of request that can come in from and
 requests are routed to appropriate js file in node-modules/config/
 
 Request payloads are JSON
+
+Ported off EC2 july 13 2015
