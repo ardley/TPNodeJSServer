@@ -1,4 +1,4 @@
-# telepastyv2
+# telepasteServer
 Server side of the android pusher app
 Served by node.  To serve:
 $ node app.js
