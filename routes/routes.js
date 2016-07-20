@@ -12,13 +12,13 @@ module.exports = function(app) {
   });
 
   app.post('/api/testing', function(req, res) {
-    console.log(req.body);
+    console.log("req.body from routes.js: "+req.body);
     var deviceTypeKey = req.body.deviceType;
-    console.log(deviceTypeKey);
+    console.log("deviceTypeKey from routes.js: "+deviceTypeKey);
     var installIDKey = req.body.InstallID;
-    console.log(installIDKey);
+    console.log("installIDKey from routes.js: "+installIDKey);
     var installRHKey = req.body.InstallRandHex;
-    console.log(installRHKey);
+    console.log("InstallRHKey from routes.js: "+installRHKey);
    
     testing.init_regist(deviceTypeKey,installIDKey,installRHKey, function(found){
       console.log(found);
