@@ -2,6 +2,8 @@ var testing = require('config/testing');
 var onboarding = require('config/onboarding');
 var toobusy = require('toobusy');
 
+
+//This is the code you get when you do a standard browser GET http call
 module.exports = function(app) {
   app.use(function(req, res, next){
         if(toobusy())res.send(503, "I'm tooo busy, maybe a ddos attempt");
@@ -10,6 +12,10 @@ module.exports = function(app) {
   app.get('/', function(req, res) {
     res.end("Welcome to ClipHorde.  Please see the kickstarter to help make it go.");
   });
+
+
+//This is the only part that’s really developed downstream in node_modules, 
+//there’s mongo schema and everything.
 
   app.post('/api/testing', function(req, res) {
     console.log("req.body from routes.js: "+req.body);
@@ -26,6 +32,10 @@ module.exports = function(app) {
     });
    });
 
+
+
+//The plan is to later move all the code to here when it’s tested.  Then make the app 
+//post to /onboarding instead of /testing.
   app.post('/api/onboarding', function(req, res) {
     var deviceTypeKey = req.body.deviceType;
     var installIDKey = req.body.InstallID;
