@@ -1,2 +1,2 @@
 general:
-  build_dir: node_modules
+  build_dir: package.json
