@@ -3,11 +3,10 @@ Server side of the android pusher app
 Served by node.  
 
 To install: 
-sudo apt-get install nodejs
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB1
-echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
-sudo apt-get update
-sudo apt-get install mongodb-org
+install nodejs:
+ sudo apt-get install nodejs
+then install mongodb (should be 3-4 commands):
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 
 
 To serve:
